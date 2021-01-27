@@ -2,9 +2,9 @@
 
 This is my fist full website, you can find here :
 1. He is a site with a navegation. 
-2.This site adapts to mobile.
-3.Have their own scroll bar.
-4.All the images have no copyright.
+2. This site adapts to mobile.
+3. Have their own scroll bar.
+4. All the images have no copyright.
 
 # Design Desktop 🖥️
 ![Preview](./design/design1.png) 
