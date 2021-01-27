@@ -1,0 +1,340 @@
+/* Here we remove all the margin and padding */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* When the curson is on the link */
+a :hover{
+    color: white;
+}
+
+
+/* Scrollbar */
+/* width */
+::-webkit-scrollbar {
+    width: 12px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 3px rgba(128, 128, 128, 0.597); 
+    border-radius: 10px;
+}
+   
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: wheat; 
+    border-radius: 10px;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background:rgb(238, 226, 203); 
+}
+
+
+/* Here is the body */
+body{
+    font-family: 'Poppins', sans-serif;
+    scrollbar-face-color: #000000;
+    background-color:rgb(18,18,18);
+}
+
+/* The header of my site */
+/* This is the conteiner part */
+header{
+    display: flex;
+    width: 90%;
+    height:10vh ;
+    margin: auto;
+    align-items: center;
+}
+
+.logo-container,
+.nav-links{
+    display: flex;
+
+}
+/* Sticky head of the page */
+.sticky{
+    position:sticky;
+    background-color: rgb(18,18,18);
+    width: 100%;
+    top: 0%;
+}
+
+.sticky-bar{
+    position: sticky;
+    top: 10vh;
+}
+
+.logo-container{
+    /* With flex one he get all the space */
+    flex: 1;
+}
+
+.logo{
+    color: #F9A826;
+    font-size: 30px;
+    margin: 5px;
+    margin-left: 35px;
+}
+/* OBS : Flex is used to give a space between the itens */
+nav{
+    flex: 1;
+}
+
+.nav-links{
+    /* The itens stay in a good place on the page */
+    justify-content: space-around;
+    list-style: none;
+
+}
+
+.nav-link{
+    color: #F9A826;
+    font-size: 25px;
+    text-decoration: none;
+}
+/* Main part */
+.presentation{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    min-height:80vh ;
+    
+}
+.introduction{
+    flex: 1;
+    
+}
+
+.intro-text{
+    padding-left: 100px;
+    padding-right: 10px;
+}
+
+.intro-text h1{
+    padding-top: 100px;
+    font-size: 50px;
+    font-weight: 500;
+    /* Here i used to give a good efect in the text */
+    background: linear-gradient(to right,#F9A826,#e4da4e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.intro-text p{
+    font-size: 30px;
+    color: wheat;
+}
+
+.cover img{
+    border-radius: 10px;
+    height: 70vh;
+    flex: 1;
+}
+.cover{
+    padding-top: 90px;
+    padding-right: 140px;
+}
+
+/*  This is the about part*/
+.about{
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+
+.intro-about{
+    flex: 1;
+}
+
+.img-cover{
+    padding-top: 60px;
+}
+
+.about-img{
+    width: 70vh;
+    border-radius: 10px;
+    
+}
+
+.about-text{
+    flex: 1;
+}
+
+.about-text h1{
+    padding-top: 100px;
+    font-size: 50px;
+    font-weight: 500;
+    /* Here i used to give a good efect in the text */
+    background: linear-gradient(to right,#F9A826,#e4da4e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.about-text p{
+    font-size: 30px;
+    color: wheat;
+}
+
+/*  Location */
+
+.location{
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+
+.cont-text h1{
+    padding-top: 100px;
+    font-size: 50px;
+    font-weight: 500;
+    text-align: center;
+    /* Here i used to give a good efect in the text */
+    background: linear-gradient(to right,#F9A826,#e4da4e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+}
+/* Submit box */
+
+.submit-box{
+    width: 20%;
+    height: 200px;
+    margin: auto;
+    
+}
+
+form{
+    padding-left: 20px;
+    margin: auto;
+}
+
+input{
+    border-style: none;
+    padding: 15px;
+    margin-left: -45px;
+    margin-bottom: 10px;
+    width: 140%;
+}
+
+.data-sub{
+    border-radius:  10px; 
+    text-align: center;
+}
+
+.submit{
+    font-size: 25px;
+    border-radius: 10px;
+    border-style: none;
+    font-weight: bold;
+    color: white;
+    background-color: #F9A826;
+}
+.submit:hover{
+    color: rgb(18,18,18) ;
+    background-color:white;
+}
+
+
+
+/* Footer of the site */
+
+.ft-bg{
+    width: 100%;
+    background-color: wheat;
+}
+
+
+.end{
+    padding: 20px;
+    text-align: center;
+}
+
+.e-link{
+    color:rgb(230, 170, 58);
+}
+
+a:hover{
+    color: white;
+}
+
+@media screen and (max-width:800px){
+  
+    .presentation{
+       display: inline-block;
+       text-align: center;
+    }
+
+    .cover{
+        margin-top: -10%;
+        margin-bottom: 30px;
+       margin-left: 29%;
+    }
+
+
+    .about{
+        display: inline-block;
+        text-align: center;
+    }
+
+    .about-img,.about-text{
+        margin-left: 13%;
+    }
+
+    input{
+        width: 200%;
+        margin-left: -65px;
+    }
+}
+
+
+@media screen and (max-width:600px){
+
+    header{
+        display: inline-block;
+    }
+
+    nav{
+        background-color: rgb(18,18,18);
+    }
+    .sticky-bar{
+        margin-top: 40px;
+        position: sticky;
+        top: 92px;
+    }
+
+    .logo{
+       margin-left: auto;
+       margin-right: 40%;
+    }
+
+    input{
+        width: 270%;
+        margin-left: -95%;
+    }
+
+}
+
+@media screen and (max-width:520px){
+
+    .logo{
+        margin-right: 120px;
+    }
+
+    .about-img{
+        width: 90%;
+        margin-left: 46px;
+    }
+
+    .img-photo{
+        width: 36vh;
+        margin-left: -14px;
+    }
+
+    
+}
