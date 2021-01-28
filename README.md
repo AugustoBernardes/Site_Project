@@ -6,7 +6,8 @@ This is my fist full website, you can find here :
 3. All the links have styles.
 4. Have their own scroll bar.
 5. All the images have no copyright.
-6. Hope you enjoy and thank you to visit my GitHub 👋
+6. In mobile have some errors i studying how to make better mobile design
+7. Hope you enjoy and thank you to visit my GitHub 👋
 
 # Design Desktop 🖥️
 ![Preview](./design/design1.png) 
